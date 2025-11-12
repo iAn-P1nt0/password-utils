@@ -1,0 +1,43 @@
+# Source files (only publish dist)
+src/
+tests/
+
+# Development files
+.github/
+.claude/
+*.config.js
+*.config.ts
+tsconfig.json
+tsconfig.node.json
+vitest.config.ts
+eslint.config.js
+
+# Documentation (keep only README and LICENSE)
+CLAUDE.md
+AGENTS.md
+
+# Git files
+.git/
+.gitignore
+.prettierrc
+.prettierignore
+
+# Environment files
+.env
+.env.*
+
+# Build artifacts
+node_modules/
+*.log
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test coverage
+coverage/
+.nyc_output/
