@@ -1,6 +1,6 @@
 {
   "name": "password-utils-examples",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Examples for @ian-p1nt0/password-utils package",
   "private": true,
   "scripts": {

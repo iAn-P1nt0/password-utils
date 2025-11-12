@@ -1,6 +1,6 @@
 {
   "name": "@ian-p1nt0/password-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cryptographically secure password and passphrase generation utilities with strength analysis",
   "type": "module",
   "private": false,
