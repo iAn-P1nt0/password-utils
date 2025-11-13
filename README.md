@@ -6,6 +6,8 @@
 
 Cryptographically secure password and passphrase generation utilities with comprehensive strength analysis. Built with TypeScript and leveraging the Web Crypto API for maximum security.
 
+> 🌐 **[View Landing Page](https://ian-p1nt0.github.io/TrustVault-password-utils/)** | 💖 **[Sponsor on GitHub](https://github.com/sponsors/iAn-P1nt0)**
+
 ## Features
 
 ✅ **Cryptographically Secure** - Uses Web Crypto API with rejection sampling to eliminate modulo bias
@@ -409,9 +411,11 @@ Apache License 2.0 - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
+- **Landing Page:** [https://ian-p1nt0.github.io/TrustVault-password-utils/](https://ian-p1nt0.github.io/TrustVault-password-utils/)
 - **Issues:** [GitHub Issues](https://github.com/iAn-P1nt0/TrustVault-password-utils/issues)
 - **Repository:** [GitHub](https://github.com/iAn-P1nt0/TrustVault-password-utils)
 - **NPM:** [@trustvault/password-utils](https://www.npmjs.com/package/@trustvault/password-utils)
+- **Sponsor:** [GitHub Sponsors](https://github.com/sponsors/iAn-P1nt0) 💖
 
 ---
 
