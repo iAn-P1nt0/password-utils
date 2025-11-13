@@ -37,14 +37,14 @@ testPasswords.forEach((test, index) => {
     console.log(`   ⚠️  Warning: ${analysis.warning}`);
   }
 
-  if (analysis.weaknesses.length > 0) {
+  if (analysis.weaknesses && analysis.weaknesses.length > 0) {
     console.log(`   🔍 Weaknesses detected:`);
     analysis.weaknesses.forEach(weakness => {
       console.log(`      • ${weakness}`);
     });
   }
 
-  if (analysis.suggestions.length > 0) {
+  if (analysis.suggestions && analysis.suggestions.length > 0) {
     console.log(`   💡 Suggestions:`);
     analysis.suggestions.forEach(suggestion => {
       console.log(`      • ${suggestion}`);
@@ -70,6 +70,6 @@ console.log(`Entropy: ${generatedAnalysis.entropy.toFixed(2)} bits`);
 console.log(`Crack Time: ${generatedAnalysis.crackTime}`);
 console.log('');
 
-if (generatedAnalysis.suggestions.length === 0) {
+if (!generatedAnalysis.suggestions || generatedAnalysis.suggestions.length === 0) {
   console.log('✅ No improvements needed - this is an excellent password!\n');
 }

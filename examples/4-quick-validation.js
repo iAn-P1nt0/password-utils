@@ -47,14 +47,16 @@ progressivePasswords.forEach((password, index) => {
 
   if (!requirements.meets) {
     console.log(`   ❌ Missing requirements:`);
-    requirements.missingRequirements.forEach(req => {
-      console.log(`      • ${req}`);
-    });
+    if (requirements.missingRequirements) {
+      requirements.missingRequirements.forEach(req => {
+        console.log(`      • ${req}`);
+      });
+    }
   } else {
     console.log(`   ✅ Meets minimum requirements`);
   }
 
-  if (check.weaknesses.length > 0) {
+  if (check.weaknesses && check.weaknesses.length > 0) {
     console.log(`   ⚠️  Weaknesses:`);
     check.weaknesses.forEach(weakness => {
       console.log(`      • ${weakness}`);

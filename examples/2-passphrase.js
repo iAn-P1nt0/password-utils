@@ -5,13 +5,13 @@
  * the Diceware method with various customization options.
  */
 
-const { generatePassphrase, generateMemorablePassphrase } = require('@ian-p1nt0/password-utils');
+const { generatePassphrase, generateMemorablePassphrase, getDefaultPassphraseOptions } = require('@ian-p1nt0/password-utils');
 
 console.log('=== Passphrase Generation ===\n');
 
 // Example 2.1: Default passphrase
 console.log('1. Default passphrase (5 words, dash separator):');
-const defaultPassphrase = generatePassphrase();
+const defaultPassphrase = generatePassphrase(getDefaultPassphraseOptions());
 console.log(`   Passphrase: ${defaultPassphrase.password}`);
 console.log(`   Strength: ${defaultPassphrase.strength}`);
 console.log(`   Entropy: ${defaultPassphrase.entropy.toFixed(2)} bits\n`);
