@@ -74,6 +74,19 @@ export {
   type ValidationContext,
 } from './analyzer/policy';
 
+// Unicode Character Sets
+export {
+  generateUnicodePassword,
+  getDefaultUnicodeOptions,
+  getCharsetInfo,
+  validateUnicodePassword,
+  generateEmojiPassword,
+  calculateMixedEntropy,
+  CharsetType,
+  type UnicodePasswordOptions,
+  type UnicodePasswordResult,
+} from './generators/unicode';
+
 // Utilities
 export {
   formatTOTPCode,
