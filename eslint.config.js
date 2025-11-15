@@ -12,6 +12,15 @@ export default [
       },
       globals: {
         crypto: 'readonly',
+        console: 'readonly',
+        fetch: 'readonly',
+        indexedDB: 'readonly',
+        IDBDatabase: 'readonly',
+        IDBVersionChangeEvent: 'readonly',
+        IDBOpenDBRequest: 'readonly',
+        AbortController: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
       },
     },
     rules: {

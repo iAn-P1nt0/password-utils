@@ -39,6 +39,14 @@ export {
   type MinimumRequirementsResult,
 } from './analyzer/quick-check';
 
+// Breach Checking
+export {
+  checkPasswordBreach,
+  clearBreachCache,
+  type BreachResult,
+  type BreachCheckOptions,
+} from './analyzer/breach';
+
 // Utilities
 export {
   formatTOTPCode,
