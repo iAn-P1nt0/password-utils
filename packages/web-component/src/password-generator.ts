@@ -398,7 +398,7 @@ export class PasswordGeneratorElement extends HTMLElement {
     this.removeEventListeners();
   }
 
-  public attributeChangedCallback(_name: string, oldValue: string | null, newValue: string | null): void {
+  attributeChangedCallback(_name: string, oldValue: string | null, newValue: string | null): void {
     if (oldValue !== newValue) {
       this.syncAttributesToUI();
     }
