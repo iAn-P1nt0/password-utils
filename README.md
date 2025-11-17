@@ -1,6 +1,6 @@
-# @trustvault/password-utils
+# @iAn-P1nt0/password-utils
 
-[![npm version](https://img.shields.io/npm/v/@trustvault/password-utils.svg)](https://www.npmjs.com/package/@trustvault/password-utils)
+[![npm version](https://img.shields.io/npm/v/@iAn-P1nt0/password-utils.svg)](https://www.npmjs.com/package/@iAn-P1nt0/password-utils)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/TrustVault-password-utils/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 
@@ -25,15 +25,15 @@ Cryptographically secure password and passphrase generation utilities with compr
 ## Installation
 
 ```bash
-npm install @trustvault/password-utils
+npm install @iAn-P1nt0/password-utils
 ```
 
 ```bash
-yarn add @trustvault/password-utils
+yarn add @iAn-P1nt0/password-utils
 ```
 
 ```bash
-pnpm add @trustvault/password-utils
+pnpm add @iAn-P1nt0/password-utils
 ```
 
 ## Quick Start
@@ -41,7 +41,7 @@ pnpm add @trustvault/password-utils
 ### Password Generation
 
 ```typescript
-import { generatePassword } from '@trustvault/password-utils';
+import { generatePassword } from '@iAn-P1nt0/password-utils';
 
 const result = generatePassword({
   length: 16,
@@ -59,7 +59,7 @@ console.log(result.entropy);   // 95.2
 ### Passphrase Generation
 
 ```typescript
-import { generatePassphrase } from '@trustvault/password-utils';
+import { generatePassphrase } from '@iAn-P1nt0/password-utils';
 
 const result = generatePassphrase({
   wordCount: 5,
@@ -75,7 +75,7 @@ console.log(result.entropy);   // 67.2
 ### Password Strength Analysis
 
 ```typescript
-import { analyzePasswordStrength } from '@trustvault/password-utils';
+import { analyzePasswordStrength } from '@iAn-P1nt0/password-utils';
 
 const analysis = analyzePasswordStrength("password123");
 
@@ -89,7 +89,7 @@ console.log(analysis.weaknesses);   // ["Common password", "Predictable sequence
 ### Real-time Validation
 
 ```typescript
-import { quickStrengthCheck } from '@trustvault/password-utils';
+import { quickStrengthCheck } from '@iAn-P1nt0/password-utils';
 
 const check = quickStrengthCheck(userInput);
 
@@ -105,11 +105,11 @@ console.log(check.strength);   // "weak"
 Install the React hooks package:
 
 ```bash
-npm install @trustvault/password-utils-react
+npm install @iAn-P1nt0/password-utils-react
 ```
 
 ```tsx
-import { usePasswordGenerator, usePasswordStrength } from '@trustvault/password-utils-react';
+import { usePasswordGenerator, usePasswordStrength } from '@iAn-P1nt0/password-utils-react';
 
 function PasswordForm() {
   const { password, generate, loading } = usePasswordGenerator({ length: 20 });
@@ -142,14 +142,14 @@ function PasswordForm() {
 Install the Web Component package:
 
 ```bash
-npm install @trustvault/password-generator-element
+npm install @iAn-P1nt0/password-generator-element
 ```
 
 **Works with any framework or vanilla HTML:**
 
 ```html
 <script type="module">
-  import '@trustvault/password-generator-element';
+  import '@iAn-P1nt0/password-generator-element';
 </script>
 
 <password-generator 
@@ -185,10 +185,10 @@ Install globally or use with npx:
 
 ```bash
 # Global install
-npm install -g @trustvault/password-cli
+npm install -g @iAn-P1nt0/password-cli
 
 # Or use with npx (no install required)
-npx @trustvault/password-cli generate
+npx @iAn-P1nt0/password-cli generate
 ```
 
 **Commands:**
@@ -400,7 +400,7 @@ import type {
   PasswordStrengthResult,
   QuickStrengthResult,
   MinimumRequirementsResult
-} from '@trustvault/password-utils';
+} from '@iAn-P1nt0/password-utils';
 ```
 
 ## Bundle Size
@@ -427,7 +427,7 @@ Requires browsers with Web Crypto API support:
 
 ```typescript
 import { useState, useCallback } from 'react';
-import { generatePassword, analyzePasswordStrength } from '@trustvault/password-utils';
+import { generatePassword, analyzePasswordStrength } from '@iAn-P1nt0/password-utils';
 
 function usePasswordGenerator() {
   const [password, setPassword] = useState('');
@@ -446,7 +446,7 @@ function usePasswordGenerator() {
 ### Form Validation Example
 
 ```typescript
-import { quickStrengthCheck, meetsMinimumRequirements } from '@trustvault/password-utils';
+import { quickStrengthCheck, meetsMinimumRequirements } from '@iAn-P1nt0/password-utils';
 
 function validatePassword(password: string): string | null {
   const requirements = meetsMinimumRequirements(password);
@@ -468,7 +468,7 @@ function validatePassword(password: string): string | null {
 ### Batch Generation Example
 
 ```typescript
-import { generatePasswords } from '@trustvault/password-utils';
+import { generatePasswords } from '@iAn-P1nt0/password-utils';
 
 // Generate 10 passwords for testing
 const passwords = generatePasswords(10, {
