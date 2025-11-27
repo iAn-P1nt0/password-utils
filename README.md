@@ -1,12 +1,12 @@
-# password-kit
+# password-tools
 
-[![npm version](https://img.shields.io/npm/v/password-kit.svg)](https://www.npmjs.com/package/password-kit)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-kit/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/password-tools.svg)](https://www.npmjs.com/package/password-tools)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-tools/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 
 Cryptographically secure password and passphrase generation utilities with comprehensive strength analysis. Built with TypeScript and leveraging the Web Crypto API for maximum security.
 
-> 🌐 **[View Landing Page](https://ian-p1nt0.github.io/password-kit/)** | 💖 **[Sponsor on GitHub](https://github.com/sponsors/iAn-P1nt0)**
+> 🌐 **[View Landing Page](https://ian-p1nt0.github.io/password-tools/)** | 💖 **[Sponsor on GitHub](https://github.com/sponsors/iAn-P1nt0)**
 
 ## Features
 
@@ -25,15 +25,15 @@ Cryptographically secure password and passphrase generation utilities with compr
 ## Installation
 
 ```bash
-npm install password-kit
+npm install password-tools
 ```
 
 ```bash
-yarn add password-kit
+yarn add password-tools
 ```
 
 ```bash
-pnpm add password-kit
+pnpm add password-tools
 ```
 
 ## Quick Start
@@ -41,7 +41,7 @@ pnpm add password-kit
 ### Password Generation
 
 ```typescript
-import { generatePassword } from 'password-kit';
+import { generatePassword } from 'password-tools';
 
 const result = generatePassword({
   length: 16,
@@ -59,7 +59,7 @@ console.log(result.entropy);   // 95.2
 ### Passphrase Generation
 
 ```typescript
-import { generatePassphrase } from 'password-kit';
+import { generatePassphrase } from 'password-tools';
 
 const result = generatePassphrase({
   wordCount: 5,
@@ -75,7 +75,7 @@ console.log(result.entropy);   // 67.2
 ### Password Strength Analysis
 
 ```typescript
-import { analyzePasswordStrength } from 'password-kit';
+import { analyzePasswordStrength } from 'password-tools';
 
 const analysis = analyzePasswordStrength("password123");
 
@@ -89,7 +89,7 @@ console.log(analysis.weaknesses);   // ["Common password", "Predictable sequence
 ### Real-time Validation
 
 ```typescript
-import { quickStrengthCheck } from 'password-kit';
+import { quickStrengthCheck } from 'password-tools';
 
 const check = quickStrengthCheck(userInput);
 
@@ -105,11 +105,11 @@ console.log(check.strength);   // "weak"
 Install the React hooks package:
 
 ```bash
-npm install password-kit-react
+npm install password-tools-react
 ```
 
 ```tsx
-import { usePasswordGenerator, usePasswordStrength } from 'password-kit-react';
+import { usePasswordGenerator, usePasswordStrength } from 'password-tools-react';
 
 function PasswordForm() {
   const { password, generate, loading } = usePasswordGenerator({ length: 20 });
@@ -142,14 +142,14 @@ function PasswordForm() {
 Install the Web Component package:
 
 ```bash
-npm install password-generator-element
+npm install password-tools-web-component
 ```
 
 **Works with any framework or vanilla HTML:**
 
 ```html
 <script type="module">
-  import 'password-generator-element';
+  import 'password-tools-web-component';
 </script>
 
 <password-generator 
@@ -185,32 +185,32 @@ Install globally or use with npx:
 
 ```bash
 # Global install
-npm install -g password-cli
+npm install -g password-tools-cli
 
 # Or use with npx (no install required)
-npx password-cli generate
+npx password-tools-cli generate
 ```
 
 **Commands:**
 
 ```bash
 # Generate password
-tvpg generate --length 32 --count 5
+password-tools generate --length 32 --count 5
 
 # Generate passphrase
-tvpg passphrase --words 6 --separator dash
+password-tools passphrase --words 6 --separator dash
 
 # Analyze password strength
-tvpg analyze "MyP@ssw0rd123"
+password-tools analyze "MyP@ssw0rd123"
 
 # Check for breaches
-tvpg breach "password123"
+password-tools breach "password123"
 
 # Quick strength check
-tvpg quick "abc123"
+password-tools quick "abc123"
 
 # JSON output
-tvpg generate --json
+password-tools generate --json
 ```
 
 **Features:**
@@ -400,7 +400,7 @@ import type {
   PasswordStrengthResult,
   QuickStrengthResult,
   MinimumRequirementsResult
-} from 'password-kit';
+} from 'password-tools';
 ```
 
 ## Bundle Size
@@ -427,7 +427,7 @@ Requires browsers with Web Crypto API support:
 
 ```typescript
 import { useState, useCallback } from 'react';
-import { generatePassword, analyzePasswordStrength } from 'password-kit';
+import { generatePassword, analyzePasswordStrength } from 'password-tools';
 
 function usePasswordGenerator() {
   const [password, setPassword] = useState('');
@@ -446,7 +446,7 @@ function usePasswordGenerator() {
 ### Form Validation Example
 
 ```typescript
-import { quickStrengthCheck, meetsMinimumRequirements } from 'password-kit';
+import { quickStrengthCheck, meetsMinimumRequirements } from 'password-tools';
 
 function validatePassword(password: string): string | null {
   const requirements = meetsMinimumRequirements(password);
@@ -468,7 +468,7 @@ function validatePassword(password: string): string | null {
 ### Batch Generation Example
 
 ```typescript
-import { generatePasswords } from 'password-kit';
+import { generatePasswords } from 'password-tools';
 
 // Generate 10 passwords for testing
 const passwords = generatePasswords(10, {
@@ -526,7 +526,7 @@ Contributions are welcome! Please follow these guidelines:
 4. **Documentation** - Update README and JSDoc comments
 5. **No Breaking Changes** - Follow semantic versioning
 
-See [AGENTS.md](https://github.com/iAn-P1nt0/password-kit/blob/main/AGENTS.md) for detailed development guidelines.
+See [AGENTS.md](https://github.com/iAn-P1nt0/password-tools/blob/main/AGENTS.md) for detailed development guidelines.
 
 ## License
 
@@ -540,10 +540,10 @@ Apache License 2.0 - see [LICENSE](LICENSE) file for details.
 
 ## Support
 
-- **Landing Page:** [https://ian-p1nt0.github.io/password-kit/](https://ian-p1nt0.github.io/password-kit/)
-- **Issues:** [GitHub Issues](https://github.com/iAn-P1nt0/password-kit/issues)
-- **Repository:** [GitHub](https://github.com/iAn-P1nt0/password-kit)
-- **NPM:** [password-kit](https://www.npmjs.com/package/password-kit)
+- **Landing Page:** [https://ian-p1nt0.github.io/password-tools/](https://ian-p1nt0.github.io/password-tools/)
+- **Issues:** [GitHub Issues](https://github.com/iAn-P1nt0/password-tools/issues)
+- **Repository:** [GitHub](https://github.com/iAn-P1nt0/password-tools)
+- **NPM:** [password-tools](https://www.npmjs.com/package/password-tools)
 - **Sponsor:** [GitHub Sponsors](https://github.com/sponsors/iAn-P1nt0) 💖
 
 ---

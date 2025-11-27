@@ -1,4 +1,4 @@
-# Publishing Guide for password-kit
+# Publishing Guide for password-tools
 
 This guide walks through the process of publishing this package to the npm registry.
 
@@ -25,10 +25,10 @@ npm whoami
 
 This package uses unscoped package names (published to the public registry):
 
-- **password-kit** - Root package (public)
-- **password-kit-react** - React hooks package (public)
-- **password-cli** - CLI tool package (public)
-- **password-generator-element** - Web component package (public)
+- **password-tools** - Root package (public)
+- **password-tools-react** - React hooks package (public)
+- **password-tools-cli** - CLI tool package (public)
+- **password-tools-web-component** - Web component package (public)
 
 All packages are published under your npm user account on the public registry.
 
@@ -53,7 +53,7 @@ Before publishing, ensure all criteria are met:
 
 ### Package Configuration
 - [ ] `package.json` version is correct
-- [ ] `package.json` name is `password-kit`
+- [ ] `package.json` name is `password-tools`
 - [ ] `package.json` has correct repository URLs
 - [ ] `package.json` has appropriate keywords
 - [ ] `package.json` `files` field includes only necessary files
@@ -91,7 +91,7 @@ npm pack
 
 This creates a `.tgz` file you can inspect. Extract and verify:
 ```bash
-tar -xzf password-kit-1.0.0.tgz
+tar -xzf password-tools-2.0.0.tgz
 cd package
 ls -la
 ```
@@ -100,7 +100,7 @@ ls -la
 
 **Install from tarball:**
 ```bash
-npm install /path/to/password-kit-1.0.0.tgz
+npm install /path/to/password-tools-2.0.0.tgz
 ```
 
 **Test in a separate project:**
@@ -108,13 +108,13 @@ npm install /path/to/password-kit-1.0.0.tgz
 mkdir test-project
 cd test-project
 npm init -y
-npm install ../password-kit/password-kit-1.0.0.tgz
+npm install ../password-tools/password-tools-2.0.0.tgz
 ```
 
 Create a test file:
 ```javascript
 // test.js
-const { generatePassword, analyzePasswordStrength } = require('password-kit');
+const { generatePassword, analyzePasswordStrength } = require('password-tools');
 
 const result = generatePassword({ length: 16 });
 console.log('Password:', result.password);
@@ -164,17 +164,17 @@ npm publish --access public --otp=123456
 
 **Check on npm:**
 ```bash
-npm view password-kit
+npm view password-tools
 ```
 
 **Install and test:**
 ```bash
-npm install password-kit
+npm install password-tools
 ```
 
 **View on npmjs.com:**
 ```
-https://www.npmjs.com/package/password-kit
+https://www.npmjs.com/package/password-tools
 ```
 
 ---
@@ -272,7 +272,7 @@ npm version major   # 1.0.0 → 2.0.0
 
 **After `npm publish`:**
 - [ ] Verify on npmjs.com
-- [ ] Test installation: `npm install password-kit`
+- [ ] Test installation: `npm install password-tools`
 - [ ] Create GitHub release
 - [ ] Announce on relevant channels
 - [ ] Update documentation site (if applicable)
@@ -285,7 +285,7 @@ npm version major   # 1.0.0 → 2.0.0
 
 **Solution:**
 - Verify you're logged in: `npm whoami`
-- Check scope ownership: `npm owner ls password-kit`
+- Check scope ownership: `npm owner ls password-tools`
 - Request access from organization admin
 - Or change package name to your own scope
 
@@ -293,7 +293,7 @@ npm version major   # 1.0.0 → 2.0.0
 
 **Solution:**
 - Choose a different package name
-- Or use a scope: `@yourname/password-kit`
+- Or use a scope: `@yourname/password-tools`
 
 ### "Version already exists"
 
@@ -344,7 +344,7 @@ Only needed if publishing scoped packages to GitHub:
   "name": "@your-org/package-name",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iAn-P1nt0/password-kit.git"
+    "url": "https://github.com/iAn-P1nt0/password-tools.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -358,7 +358,7 @@ Only needed if publishing scoped packages to GitHub:
 npm publish
 ```
 
-**Note:** Since password-kit uses unscoped packages, they will publish to the public npm registry by default.
+**Note:** Since password-tools uses unscoped packages, they will publish to the public npm registry by default.
 
 ---
 
@@ -430,7 +430,7 @@ For publishing issues:
 - GitHub Package Registry: https://docs.github.com/en/packages
 
 For package-specific issues:
-- GitHub Issues: https://github.com/iAn-P1nt0/password-kit/issues
+- GitHub Issues: https://github.com/iAn-P1nt0/password-tools/issues
 
 ---
 

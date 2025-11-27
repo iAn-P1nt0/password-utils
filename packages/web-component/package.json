@@ -1,5 +1,5 @@
 {
-  "name": "password-generator-element",
+  "name": "password-tools-web-component",
   "version": "1.0.0",
   "description": "Web Component for password generation - framework agnostic",
   "type": "module",
@@ -40,15 +40,15 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iAn-P1nt0/password-kit.git",
+    "url": "git+https://github.com/iAn-P1nt0/password-tools.git",
     "directory": "packages/web-component"
   },
   "bugs": {
-    "url": "https://github.com/iAn-P1nt0/password-kit/issues"
+    "url": "https://github.com/iAn-P1nt0/password-tools/issues"
   },
-  "homepage": "https://github.com/iAn-P1nt0/password-kit#readme",
+  "homepage": "https://github.com/iAn-P1nt0/password-tools#readme",
   "dependencies": {
-    "password-kit": "^2.0.0"
+    "password-tools": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",

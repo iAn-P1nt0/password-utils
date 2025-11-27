@@ -32,10 +32,10 @@
  */
 
 import { useState, useCallback, useRef } from 'react';
-import { 
-  checkPasswordBreach, 
-  type BreachResult 
-} from 'password-kit';
+import {
+  checkPasswordBreach,
+  type BreachResult
+} from 'password-tools';
 
 /**
  * Options for useBreachCheck hook

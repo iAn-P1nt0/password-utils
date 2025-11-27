@@ -21,7 +21,7 @@
   "author": "TrustVault",
   "license": "Apache-2.0",
   "dependencies": {
-    "password-kit": "file:../password-kit-1.0.0.tgz"
+    "strong-password-gen": "file:../password-kit-1.0.0.tgz"
   },
   "engines": {
     "node": ">=20.0.0"

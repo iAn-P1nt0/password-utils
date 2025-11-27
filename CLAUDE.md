@@ -1,11 +1,11 @@
-# TrustVault Password Utils
+# TrustVault Password Tools
 
 ## Project Overview
 
-**password-kit** is a cryptographically secure password and passphrase generation library with comprehensive strength analysis capabilities. Built with TypeScript and leveraging the Web Crypto API, this package provides production-ready utilities for password management in web applications.
+**password-tools** is a cryptographically secure password and passphrase generation library with comprehensive strength analysis capabilities. Built with TypeScript and leveraging the Web Crypto API, this package provides production-ready utilities for password management in web applications.
 
 **Package Information:**
-- **Name:** password-kit
+- **Name:** password-tools
 - **Version:** 2.0.0
 - **License:** Apache-2.0
 - **Node:** >=20.0.0
@@ -311,7 +311,7 @@ formatTOTPCode("123456") // Returns: "123 456"
 
 **Basic Password Generation:**
 ```typescript
-import { generatePassword } from 'password-kit';
+import { generatePassword } from 'password-tools';
 
 const result = generatePassword({
   length: 16,
@@ -328,7 +328,7 @@ console.log(result.entropy);   // 95.2 bits
 
 **Passphrase Generation:**
 ```typescript
-import { generatePassphrase } from 'password-kit';
+import { generatePassphrase } from 'password-tools';
 
 const result = generatePassphrase({
   wordCount: 5,
@@ -342,7 +342,7 @@ console.log(result.password);  // "Forest-Mountain-River-Sky-Ocean47"
 
 **Strength Analysis:**
 ```typescript
-import { analyzePasswordStrength } from 'password-kit';
+import { analyzePasswordStrength } from 'password-tools';
 
 const analysis = analyzePasswordStrength("password123");
 
@@ -355,7 +355,7 @@ console.log(analysis.weaknesses);   // ["Common password", "Predictable sequence
 
 **Real-time Validation:**
 ```typescript
-import { quickStrengthCheck } from 'password-kit';
+import { quickStrengthCheck } from 'password-tools';
 
 const check = quickStrengthCheck(userInput);
 

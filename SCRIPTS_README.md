@@ -115,7 +115,7 @@ cat coverage-reports/*-coverage.txt
 ## Package Structure
 
 ```
-password-kit/
+password-tools/
 ├── build-all.sh              # Build all packages
 ├── test-all.sh               # Test all packages
 ├── generate-coverage.sh      # Generate coverage reports
@@ -157,10 +157,10 @@ All scripts are available as npm commands in the root `package.json`:
 Building all TrustVault Password Utils packages
 ==================================================
 
-==> Building main package (password-kit)...
+==> Building main package (password-tools)...
 ✓ Main package built successfully
 
-==> Building React hooks package (password-kit-react)...
+==> Building React hooks package (password-tools-react)...
 ✓ React package built successfully
 
 ...

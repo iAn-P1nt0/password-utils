@@ -32,11 +32,11 @@
  */
 
 import { useState, useEffect, useRef } from 'react';
-import { 
-  analyzePasswordStrength, 
+import {
+  analyzePasswordStrength,
   preloadZxcvbn,
-  type PasswordStrengthResult 
-} from 'password-kit';
+  type PasswordStrengthResult
+} from 'password-tools';
 
 /**
  * Options for usePasswordStrength hook
