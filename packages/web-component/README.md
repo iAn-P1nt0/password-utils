@@ -316,7 +316,7 @@ generator.addEventListener('click', () => {
 </form>
 
 <script type="module">
-  import '@trustvault/password-generator-element';
+  import 'password-generator-element';
   
   const form = document.getElementById('signup-form');
   const generator = document.getElementById('pwd-gen');

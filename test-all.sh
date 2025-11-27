@@ -81,7 +81,7 @@ cd ../..
 echo ""
 
 # Test CLI package
-print_step "Testing CLI package (@trustvault/password-cli)..."
+print_step "Testing CLI package (password-cli)..."
 cd packages/cli
 if timeout 60 npm test 2>&1 | tee /tmp/cli-test.log; then
     print_success "CLI package tests passed"
@@ -102,7 +102,7 @@ cd ../..
 echo ""
 
 # Test Web Component package
-print_step "Testing Web Component package (@trustvault/password-generator-element)..."
+print_step "Testing Web Component package (password-generator-element)..."
 cd packages/web-component
 if timeout 60 npm test 2>&1 | tee /tmp/webcomponent-test.log; then
     print_success "Web Component package tests passed"
