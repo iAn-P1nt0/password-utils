@@ -36,7 +36,7 @@ import {
   analyzePasswordStrength, 
   preloadZxcvbn,
   type PasswordStrengthResult 
-} from 'password-utils';
+} from 'password-kit';
 
 /**
  * Options for usePasswordStrength hook

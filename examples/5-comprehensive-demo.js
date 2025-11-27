@@ -1,7 +1,7 @@
 /**
  * Example 5: Comprehensive Demo
  *
- * A complete demonstration showcasing all features of the password-utils library
+ * A complete demonstration showcasing all features of the password-kit library
  * in a realistic password manager scenario.
  */
 
@@ -15,7 +15,7 @@ const {
   quickStrengthCheck,
   meetsMinimumRequirements,
   formatTOTPCode
-} = require('password-utils');
+} = require('password-kit');
 
 console.log('╔════════════════════════════════════════════════════════════╗');
 console.log('║     Password Utils - Comprehensive Feature Demo           ║');

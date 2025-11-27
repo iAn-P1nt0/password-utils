@@ -8,7 +8,7 @@
 const {
   quickStrengthCheck,
   meetsMinimumRequirements
-} = require('password-utils');
+} = require('password-kit');
 
 console.log('=== Quick Strength Validation ===\n');
 
@@ -111,7 +111,7 @@ console.log('');
 // Performance comparison
 console.log('\n=== Performance Comparison ===\n');
 
-const { analyzePasswordStrength } = require('password-utils');
+const { analyzePasswordStrength } = require('password-kit');
 
 const testPassword = 'TestPassword123!';
 

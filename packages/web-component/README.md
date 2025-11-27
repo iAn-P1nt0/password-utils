@@ -3,7 +3,7 @@
 Web Component for password generation - framework agnostic, works anywhere.
 
 [![npm version](https://img.shields.io/npm/v/@trustvault/password-generator-element.svg)](https://www.npmjs.com/package/@trustvault/password-generator-element)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-utils/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-kit/blob/main/LICENSE)
 
 ## Features
 
@@ -386,7 +386,7 @@ For older browsers, use polyfills:
 
 ## Examples
 
-See the [examples directory](https://github.com/iAn-P1nt0/password-utils/tree/main/examples) for more:
+See the [examples directory](https://github.com/iAn-P1nt0/password-kit/tree/main/examples) for more:
 
 - Basic usage
 - Framework integrations (React, Vue, Angular)
@@ -396,9 +396,9 @@ See the [examples directory](https://github.com/iAn-P1nt0/password-utils/tree/ma
 
 ## Related Packages
 
-- [password-utils](https://www.npmjs.com/package/password-utils) - Core library
-- [password-utils-react](https://www.npmjs.com/package/password-utils-react) - React hooks
-- [password-utils-vue](https://www.npmjs.com/package/password-utils-vue) - Vue composables
+- [password-kit](https://www.npmjs.com/package/password-kit) - Core library
+- [password-kit-react](https://www.npmjs.com/package/password-kit-react) - React hooks
+- [password-kit-vue](https://www.npmjs.com/package/password-kit-vue) - Vue composables
 
 ## License
 
@@ -406,10 +406,10 @@ Apache-2.0
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/password-utils/blob/main/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/password-kit/blob/main/CONTRIBUTING.md)
 
 ## Support
 
-- 📖 [Documentation](https://github.com/iAn-P1nt0/password-utils)
-- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/password-utils/issues)
-- 💬 [Discussions](https://github.com/iAn-P1nt0/password-utils/discussions)
+- 📖 [Documentation](https://github.com/iAn-P1nt0/password-kit)
+- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/password-kit/issues)
+- 💬 [Discussions](https://github.com/iAn-P1nt0/password-kit/discussions)

@@ -1,6 +1,6 @@
 # GitHub Workflows
 
-This directory contains GitHub Actions workflows for the password-utils package.
+This directory contains GitHub Actions workflows for the password-kit package.
 
 ## Active Workflows
 
@@ -109,9 +109,9 @@ No setup required. CodeQL automatically:
 Add these to your README.md:
 
 ```markdown
-[![CI](https://github.com/iAn-P1nt0/password-utils/workflows/CI/badge.svg)](https://github.com/iAn-P1nt0/password-utils/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/iAn-P1nt0/password-utils/workflows/CodeQL/badge.svg)](https://github.com/iAn-P1nt0/password-utils/actions/workflows/codeql.yml)
-[![npm version](https://img.shields.io/npm/v/password-utils.svg)](https://www.npmjs.com/package/password-utils)
+[![CI](https://github.com/iAn-P1nt0/password-kit/workflows/CI/badge.svg)](https://github.com/iAn-P1nt0/password-kit/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/iAn-P1nt0/password-kit/workflows/CodeQL/badge.svg)](https://github.com/iAn-P1nt0/password-kit/actions/workflows/codeql.yml)
+[![npm version](https://img.shields.io/npm/v/password-kit.svg)](https://www.npmjs.com/package/password-kit)
 ```
 
 ## Troubleshooting

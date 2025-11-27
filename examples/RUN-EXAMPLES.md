@@ -10,7 +10,7 @@ All examples can be run from the `examples/` directory after installing dependen
 npm install
 ```
 
-This will install the `password-utils` package from the local tarball.
+This will install the `password-kit` package from the local tarball.
 
 ## Running Individual Examples
 
@@ -90,7 +90,7 @@ Each example produces formatted console output showing:
 
 ## Troubleshooting
 
-**Issue: "Cannot find module 'password-utils'"**
+**Issue: "Cannot find module 'password-kit'"**
 
 Solution:
 ```bash

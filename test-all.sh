@@ -41,7 +41,7 @@ TOTAL_TESTS=0
 PASSED_TESTS=0
 
 # Test main package with timeout
-print_step "Testing main package (password-utils)..."
+print_step "Testing main package (password-kit)..."
 if timeout 120 npm test 2>&1 | tee /tmp/main-test.log; then
     print_success "Main package tests passed"
     SUCCESSFUL_TESTS="${SUCCESSFUL_TESTS}\n  - Main package"
@@ -60,7 +60,7 @@ TOTAL_TESTS=$((TOTAL_TESTS + 1))
 echo ""
 
 # Test React package with timeout
-print_step "Testing React hooks package (password-utils-react)..."
+print_step "Testing React hooks package (password-kit-react)..."
 cd packages/react
 if timeout 120 npm test 2>&1 | tee /tmp/react-test.log; then
     print_success "React package tests passed"

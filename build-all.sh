@@ -39,7 +39,7 @@ FAILED_BUILDS=""
 SUCCESSFUL_BUILDS=""
 
 # Build main package
-print_step "Building main package (password-utils)..."
+print_step "Building main package (password-kit)..."
 if npm run build 2>&1 | tee /tmp/main-build.log; then
     print_success "Main package built successfully"
     SUCCESSFUL_BUILDS="${SUCCESSFUL_BUILDS}\n  - Main package"
@@ -50,7 +50,7 @@ fi
 echo ""
 
 # Build React package
-print_step "Building React hooks package (password-utils-react)..."
+print_step "Building React hooks package (password-kit-react)..."
 cd packages/react
 if npm install --silent 2>&1 && npm run build 2>&1 | tee /tmp/react-build.log; then
     print_success "React package built successfully"

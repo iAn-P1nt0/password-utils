@@ -3,7 +3,7 @@
 🔐 Secure password generation from the command line
 
 [![npm version](https://img.shields.io/npm/v/@trustvault/password-cli.svg)](https://www.npmjs.com/package/@trustvault/password-cli)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-utils/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-kit/blob/main/LICENSE)
 
 Generate cryptographically secure passwords and passphrases directly from your terminal. Uses Web Crypto API for maximum security.
 
@@ -506,13 +506,13 @@ npx @trustvault/password-cli generate
 
 ## Related Packages
 
-- [password-utils](https://www.npmjs.com/package/password-utils) - Core library
-- [password-utils-react](https://www.npmjs.com/package/password-utils-react) - React hooks
+- [password-kit](https://www.npmjs.com/package/password-kit) - Core library
+- [password-kit-react](https://www.npmjs.com/package/password-kit-react) - React hooks
 - [@trustvault/password-generator-element](https://www.npmjs.com/package/@trustvault/password-generator-element) - Web component
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/password-utils/blob/main/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/password-kit/blob/main/CONTRIBUTING.md)
 
 ## License
 
@@ -520,6 +520,6 @@ Apache-2.0
 
 ## Support
 
-- 📖 [Documentation](https://github.com/iAn-P1nt0/password-utils)
-- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/password-utils/issues)
-- 💬 [Discussions](https://github.com/iAn-P1nt0/password-utils/discussions)
+- 📖 [Documentation](https://github.com/iAn-P1nt0/password-kit)
+- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/password-kit/issues)
+- 💬 [Discussions](https://github.com/iAn-P1nt0/password-kit/discussions)

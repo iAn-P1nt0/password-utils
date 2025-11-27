@@ -1,9 +1,9 @@
-# password-utils-react
+# password-kit-react
 
-React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/password-utils).
+React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/password-kit).
 
-[![npm version](https://img.shields.io/npm/v/password-utils-react.svg)](https://www.npmjs.com/package/password-utils-react)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-utils/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/password-kit-react.svg)](https://www.npmjs.com/package/password-kit-react)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/iAn-P1nt0/password-kit/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 
 ## Features
@@ -19,15 +19,15 @@ React hooks for [TrustVault Password Utils](https://github.com/iAn-P1nt0/passwor
 ## Installation
 
 ```bash
-npm install password-utils-react
+npm install password-kit-react
 ```
 
 ```bash
-yarn add password-utils-react
+yarn add password-kit-react
 ```
 
 ```bash
-pnpm add password-utils-react
+pnpm add password-kit-react
 ```
 
 ## Quick Start
@@ -35,7 +35,7 @@ pnpm add password-utils-react
 ### Password Generation
 
 ```tsx
-import { usePasswordGenerator } from 'password-utils-react';
+import { usePasswordGenerator } from 'password-kit-react';
 
 function PasswordForm() {
   const { password, generate, loading, clear } = usePasswordGenerator({
@@ -66,7 +66,7 @@ function PasswordForm() {
 
 ```tsx
 import { useState } from 'react';
-import { usePasswordStrength } from 'password-utils-react';
+import { usePasswordStrength } from 'password-kit-react';
 
 function PasswordInput() {
   const [password, setPassword] = useState('');
@@ -133,7 +133,7 @@ function StrengthMeter({ score }: { score: number }) {
 ### Passphrase Generation
 
 ```tsx
-import { usePassphraseGenerator } from 'password-utils-react';
+import { usePassphraseGenerator } from 'password-kit-react';
 
 function PassphraseForm() {
   const { passphrase, generate, loading } = usePassphraseGenerator({
@@ -159,7 +159,7 @@ function PassphraseForm() {
 
 ```tsx
 import { useState } from 'react';
-import { useBreachCheck } from 'password-utils-react';
+import { useBreachCheck } from 'password-kit-react';
 
 function SignupForm() {
   const [password, setPassword] = useState('');
@@ -300,7 +300,7 @@ import {
   usePasswordGenerator,
   usePasswordStrength,
   useBreachCheck
-} from 'password-utils-react';
+} from 'password-kit-react';
 
 function CompletePasswordForm() {
   const [password, setPassword] = useState('');
@@ -354,7 +354,7 @@ function CompletePasswordForm() {
 
 ```tsx
 import { useEffect } from 'react';
-import { preloadZxcvbn } from 'password-utils';
+import { preloadZxcvbn } from 'password-kit';
 
 function App() {
   // Preload zxcvbn on app mount
@@ -380,7 +380,7 @@ import type {
   PassphraseOptions,
   PasswordStrengthResult,
   BreachResult
-} from 'password-utils-react';
+} from 'password-kit-react';
 ```
 
 ## Performance Tips
@@ -402,15 +402,15 @@ Apache-2.0
 
 ## Related Packages
 
-- [password-utils](https://www.npmjs.com/package/password-utils) - Core library
-- [password-utils-vue](https://www.npmjs.com/package/password-utils-vue) - Vue 3 composables
+- [password-kit](https://www.npmjs.com/package/password-kit) - Core library
+- [password-kit-vue](https://www.npmjs.com/package/password-kit-vue) - Vue 3 composables
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/password-utils/blob/main/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/iAn-P1nt0/password-kit/blob/main/CONTRIBUTING.md)
 
 ## Support
 
-- 📖 [Documentation](https://github.com/iAn-P1nt0/password-utils)
-- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/password-utils/issues)
-- 💬 [Discussions](https://github.com/iAn-P1nt0/password-utils/discussions)
+- 📖 [Documentation](https://github.com/iAn-P1nt0/password-kit)
+- 🐛 [Issue Tracker](https://github.com/iAn-P1nt0/password-kit/issues)
+- 💬 [Discussions](https://github.com/iAn-P1nt0/password-kit/discussions)

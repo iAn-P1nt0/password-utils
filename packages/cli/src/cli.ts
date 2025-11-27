@@ -17,7 +17,7 @@ import {
   quickStrengthCheck,
   checkPasswordBreach,
   type QuickStrengthResult,
-} from 'password-utils';
+} from 'password-kit';
 
 const program = new Command();
 

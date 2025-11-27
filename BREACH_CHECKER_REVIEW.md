@@ -58,7 +58,7 @@ HIBP API (Network)
 ### Basic Usage
 
 ```typescript
-import { checkPasswordBreach } from 'password-utils';
+import { checkPasswordBreach } from 'password-kit';
 
 // Check if password is breached
 const result = await checkPasswordBreach('password123');
@@ -98,7 +98,7 @@ const result = await checkPasswordBreach('myPassword', {
 ### Cache Management
 
 ```typescript
-import { clearBreachCache } from 'password-utils';
+import { clearBreachCache } from 'password-kit';
 
 // Clear all cached breach data
 await clearBreachCache();
@@ -133,7 +133,7 @@ interface BreachResult {
 
 ```typescript
 import { useState, useEffect } from 'react';
-import { checkPasswordBreach } from 'password-utils';
+import { checkPasswordBreach } from 'password-kit';
 
 function usePasswordBreach(password: string) {
   const [breach, setBreach] = useState<BreachResult | null>(null);

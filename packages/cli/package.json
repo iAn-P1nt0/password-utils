@@ -34,15 +34,15 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iAn-P1nt0/password-utils.git",
+    "url": "git+https://github.com/iAn-P1nt0/password-kit.git",
     "directory": "packages/cli"
   },
   "bugs": {
-    "url": "https://github.com/iAn-P1nt0/password-utils/issues"
+    "url": "https://github.com/iAn-P1nt0/password-kit/issues"
   },
-  "homepage": "https://github.com/iAn-P1nt0/password-utils#readme",
+  "homepage": "https://github.com/iAn-P1nt0/password-kit#readme",
   "dependencies": {
-    "password-utils": "file:../..",
+    "password-kit": "file:../..",
     "chalk": "^5.3.0",
     "clipboardy": "^4.0.0",
     "commander": "^12.0.0",

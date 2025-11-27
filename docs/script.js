@@ -114,7 +114,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'g' || e.key === 'G') {
         const nextKey = (event) => {
             if (event.key === 'h' || event.key === 'H') {
-                window.open('https://github.com/iAn-P1nt0/password-utils', '_blank');
+                window.open('https://github.com/iAn-P1nt0/password-kit', '_blank');
                 document.removeEventListener('keydown', nextKey);
             }
         };
@@ -126,7 +126,7 @@ document.addEventListener('keydown', (e) => {
 
 // Add copy-to-clipboard functionality for npm install command
 function addCopyButtons() {
-    const installCommand = 'npm install password-utils';
+    const installCommand = 'npm install password-kit';
     
     // You can add copy buttons to code snippets in the future
     console.log('Install command:', installCommand);
@@ -150,5 +150,5 @@ if ('loading' in HTMLImageElement.prototype) {
 // Console Easter egg
 console.log('%c🔐 TrustVault Password Utils', 'font-size: 20px; font-weight: bold; color: #4f46e5;');
 console.log('%cSecure. Open Source. TypeScript.', 'font-size: 14px; color: #94a3b8;');
-console.log('%cContribute: https://github.com/iAn-P1nt0/password-utils', 'font-size: 12px; color: #64748b;');
+console.log('%cContribute: https://github.com/iAn-P1nt0/password-kit', 'font-size: 12px; color: #64748b;');
 console.log('%cSponsor: https://github.com/sponsors/iAn-P1nt0', 'font-size: 12px; color: #ec4899;');

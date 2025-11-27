@@ -13,7 +13,7 @@
  * ```
  */
 
-import { generatePassword, type PasswordGeneratorOptions } from 'password-utils';
+import { generatePassword, type PasswordGeneratorOptions } from 'password-kit';
 
 const template = document.createElement('template');
 template.innerHTML = `

@@ -5,7 +5,7 @@
  * with various configurations.
  */
 
-const { generatePassword, getDefaultOptions } = require('password-utils');
+const { generatePassword, getDefaultOptions } = require('password-kit');
 
 console.log('=== Basic Password Generation ===\n');
 

@@ -35,7 +35,7 @@ import { useState, useCallback, useRef } from 'react';
 import { 
   checkPasswordBreach, 
   type BreachResult 
-} from 'password-utils';
+} from 'password-kit';
 
 /**
  * Options for useBreachCheck hook

@@ -28,7 +28,7 @@ import {
   generatePassword,
   type PasswordGeneratorOptions,
   type GeneratedPassword,
-} from 'password-utils';
+} from 'password-kit';
 
 /**
  * Result from usePasswordGenerator hook

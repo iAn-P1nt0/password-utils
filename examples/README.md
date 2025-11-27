@@ -1,6 +1,6 @@
 # TrustVault Password Utils - Examples
 
-This folder contains interactive demos showcasing password-utils features.
+This folder contains interactive demos showcasing password-kit features.
 
 ## Available Demos
 

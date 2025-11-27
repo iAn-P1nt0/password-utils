@@ -1,5 +1,5 @@
 /**
- * password-utils
+ * password-kit
  * 
  * Cryptographically secure password and passphrase generation utilities
  * with comprehensive strength analysis.

@@ -40,7 +40,7 @@ First paint:       ~35 KB ✅
 
 ### Phase 3.7: React Hooks Package ✅
 
-**Package**: `password-utils-react`  
+**Package**: `password-kit-react`  
 **Location**: `/packages/react/`
 
 #### Hooks Implemented:
@@ -70,7 +70,7 @@ First paint:       ~35 KB ✅
 
 #### API Example:
 ```tsx
-import { usePasswordGenerator, usePasswordStrength } from 'password-utils-react';
+import { usePasswordGenerator, usePasswordStrength } from 'password-kit-react';
 
 function PasswordForm() {
   const [password, setPassword] = useState('');
@@ -341,9 +341,9 @@ tvpg generate --count 10 --quiet > passwords.txt
 ## Package Structure
 
 ```
-password-utils/
+password-kit/
 ├── packages/
-│   ├── react/                          # password-utils-react
+│   ├── react/                          # password-kit-react
 │   │   ├── src/
 │   │   │   ├── usePasswordGenerator.ts
 │   │   │   ├── usePasswordStrength.ts
@@ -381,12 +381,12 @@ password-utils/
 
 ## NPM Packages Ready for Publishing
 
-### 1. password-utils (existing - updated)
+### 1. password-kit (existing - updated)
 - Version: 2.0.0 → 1.1.0 (minor bump for new lazy-load feature)
 - Changes: Lazy-load zxcvbn implementation
 - Breaking: None
 
-### 2. password-utils-react (new)
+### 2. password-kit-react (new)
 - Version: 1.0.0
 - Dependencies: react >=16.8.0
 - Size: ~5 KB (excluding peer deps)
@@ -405,7 +405,7 @@ password-utils/
 
 ## Publishing Checklist
 
-### Core Package (password-utils)
+### Core Package (password-kit)
 - [ ] Bump version to 1.1.0
 - [ ] Update CHANGELOG.md
 - [ ] Update README.md
@@ -415,7 +415,7 @@ password-utils/
 - [ ] Publish: `npm publish`
 
 ### React Package
-- [ ] Link core package: `npm link password-utils`
+- [ ] Link core package: `npm link password-kit`
 - [ ] Run `npm run test`
 - [ ] Run `npm run build`
 - [ ] Test in React 16.8, 17, 18
@@ -528,5 +528,5 @@ All implementation requirements met:
 
 **Generated**: November 15, 2025  
 **Author**: GitHub Copilot (Claude Sonnet 4.5)  
-**Package**: password-utils  
+**Package**: password-kit  
 **Phases Completed**: 2.6, 3.7, 3.8, 3.9

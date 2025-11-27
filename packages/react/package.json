@@ -1,5 +1,5 @@
 {
-  "name": "password-utils-react",
+  "name": "password-kit-react",
   "version": "1.0.0",
   "description": "React hooks for TrustVault password utilities",
   "type": "module",
@@ -39,18 +39,18 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iAn-P1nt0/password-utils.git",
+    "url": "git+https://github.com/iAn-P1nt0/password-kit.git",
     "directory": "packages/react"
   },
   "bugs": {
-    "url": "https://github.com/iAn-P1nt0/password-utils/issues"
+    "url": "https://github.com/iAn-P1nt0/password-kit/issues"
   },
-  "homepage": "https://github.com/iAn-P1nt0/password-utils#readme",
+  "homepage": "https://github.com/iAn-P1nt0/password-kit#readme",
   "peerDependencies": {
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "password-utils": "file:../.."
+    "password-kit": "file:../.."
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",

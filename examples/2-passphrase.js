@@ -5,7 +5,7 @@
  * the Diceware method with various customization options.
  */
 
-const { generatePassphrase, generateMemorablePassphrase, getDefaultPassphraseOptions } = require('password-utils');
+const { generatePassphrase, generateMemorablePassphrase, getDefaultPassphraseOptions } = require('password-kit');
 
 console.log('=== Passphrase Generation ===\n');
 

@@ -35,7 +35,7 @@ This landing page is automatically deployed to GitHub Pages from the `docs/` dir
 
 ### View Live
 
-🌐 **[https://ian-p1nt0.github.io/password-utils/](https://ian-p1nt0.github.io/password-utils/)**
+🌐 **[https://ian-p1nt0.github.io/password-kit/](https://ian-p1nt0.github.io/password-kit/)**
 
 ## Local Development
 
